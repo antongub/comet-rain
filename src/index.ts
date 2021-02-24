@@ -1,4 +1,5 @@
 import Comet from './Comet';
+import Circle from './Circle';
 
 let allComets: Array<Comet> = [];
 
@@ -38,8 +39,8 @@ loop();
 
 document.getElementById("background")!.addEventListener('click', (event) => {
     radiusShake(event);
-
-
+    let circle = new Circle({x: event.x, y: event.y});
+    circle.drawElement();
 });
 
 function radiusShake(event: MouseEvent) {

@@ -20,6 +20,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
+    background-color: tan;
 }
 
 #background * {
@@ -42,3 +43,25 @@
         transform: scale(1) rotateZ(320deg);
       }
   }
+
+  /* $radius: 50px; */
+  /* $thickness: 5px; */
+.circle {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: 5px solid rgb(216, 39, 39);
+    animation-name: circleExpand;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+@keyframes circleExpand {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

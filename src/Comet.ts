@@ -1,12 +1,5 @@
-interface CurrentPosition {
-    x: number;
-    y: number;
-}
-
-interface CurrentVelocity {
-    x: number;
-    y: number;
-}
+import { CurrentPosition } from './general';
+import { CurrentVelocity } from './general';
 
 export default class Comet {
     protected element: HTMLDivElement;
